@@ -8,6 +8,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
+  "license": "MIT",
   "dependencies": {
     "@hookform/resolvers": "^2.9.6",
     "firebase": "^9.9.0",
