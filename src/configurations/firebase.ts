@@ -1,3 +1,5 @@
+import * as firebase from 'firebase/app';
+
 const firebaseConfig = {
   apiKey: import.meta.env.VITE_APP_API_KEY,
   authDomain: import.meta.env.VITE_APP_AUTH_DOMAIN,
@@ -7,4 +9,6 @@ const firebaseConfig = {
   appId: import.meta.env.VITE_APP_APP_ID,
 };
 
-export default firebaseConfig;
+const app = firebase.initializeApp(firebaseConfig);
+
+export default app;
