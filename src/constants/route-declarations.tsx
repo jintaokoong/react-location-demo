@@ -9,6 +9,7 @@ import pokeService from '../services/poke-service';
 import { ListingResponse } from '../types/listing-response';
 import { Pokemon } from '../types/pokemon';
 import { ListingOptions } from '../types/listing-options';
+import { client } from '../App';
 
 const routeDeclarations: Route[] = [
   {
@@ -25,12 +26,16 @@ const routeDeclarations: Route[] = [
   },
   {
     path: '/main',
-    loader: (loader) => {
-      console.log(loader.search as ListingOptions);
-      return pokeService.fetchPokemons(loader.search).then((res) => ({
-        pokemons: res,
-      }));
-    },
+    loader: (loader) =>
+      client.getQueryData([
+        'pokemons',
+        loader.search.offset,
+        loader.search.limit,
+      ]) ??
+      client.fetchQuery(
+        ['pokemons', loader.search.offset, loader.search.limit],
+        () => pokeService.fetchPokemons(loader.search).then(() => ({})),
+      ),
     element: (
       <ProtectedRoute>
         <Main />
