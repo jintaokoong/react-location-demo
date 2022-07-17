@@ -3,12 +3,15 @@ lockfileVersion: 5.4
 specifiers:
   '@hookform/resolvers': ^2.9.6
   '@types/nprogress': ^0.2.0
+  '@types/ramda': ^0.28.15
   '@types/react': ^18.0.15
   '@types/react-dom': ^18.0.6
   '@vitejs/plugin-react': ^2.0.0
   firebase: ^9.9.0
+  ky: ^0.31.0
   nprogress: ^0.2.0
   prettier: ^2.7.1
+  ramda: ^0.28.0
   react: ^18.2.0
   react-dom: ^18.2.0
   react-hook-form: 7.0.0-beta.14
@@ -20,7 +23,9 @@ specifiers:
 dependencies:
   '@hookform/resolvers': 2.9.6_pvzuhxbydo52fadwzgej3nwbwm
   firebase: 9.9.0
+  ky: 0.31.0
   nprogress: 0.2.0
+  ramda: 0.28.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-hook-form: 7.0.0-beta.14_react@18.2.0
@@ -29,6 +34,7 @@ dependencies:
 
 devDependencies:
   '@types/nprogress': 0.2.0
+  '@types/ramda': 0.28.15
   '@types/react': 18.0.15
   '@types/react-dom': 18.0.6
   '@vitejs/plugin-react': 2.0.0_vite@3.0.0
@@ -906,6 +912,12 @@ packages:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
     dev: true
 
+  /@types/ramda/0.28.15:
+    resolution: {integrity: sha512-FCaLNVZry65jW8x/FDnKgjgkCNQxgc5AYMQwdNn6yW5M+62R+0nt2Y36U43dTNora9hcquemfrY5gxhE5pcilQ==}
+    dependencies:
+      ts-toolbelt: 6.15.5
+    dev: true
+
   /@types/react-dom/18.0.6:
     resolution: {integrity: sha512-/5OFZgfIPSwy+YuIBP/FgJnQnsxhZhjjrnxudMddeblOouIodEQ75X14Rr4wGSG/bknL+Omy9iWlLo1u/9GzAA==}
     dependencies:
@@ -1444,6 +1456,11 @@ packages:
       setimmediate: 1.0.5
     dev: false
 
+  /ky/0.31.0:
+    resolution: {integrity: sha512-C27vqDb3vuxy4mi/x1wt9P1ES0QxEJg3CbPz2t3lTaQ4AvR/hkwES06yPdqol+q3hH+DrZKb/PKD+pAQkharNg==}
+    engines: {node: '>=14.16'}
+    dev: false
+
   /lie/3.3.0:
     resolution: {integrity: sha512-UaiMJzeWRlEujzAuw5LokY1L5ecNQYZKfmyZ9L7wDHb/p5etKaxXhohBcrw0EYby+G/NA52vRSN4N39dxHAIwQ==}
     dependencies:
@@ -1572,6 +1589,10 @@ packages:
       '@types/long': 4.0.2
       '@types/node': 18.0.5
       long: 4.0.0
+    dev: false
+
+  /ramda/0.28.0:
+    resolution: {integrity: sha512-9QnLuG/kPVgWvMQ4aODhsBUFKOUmnbUnsSXACv+NCQZcHbeb+v8Lodp8OVxtRULN1/xOyYLLaL6npE6dMq5QTA==}
     dev: false
 
   /react-dom/18.2.0_react@18.2.0:
@@ -1749,6 +1770,10 @@ packages:
   /tr46/0.0.3:
     resolution: {integrity: sha512-N3WMsuqV66lT30CrXNbEjx4GEwlow3v6rr4mCcv6prnfwhS01rkgyFdjPNBYd9br7LpXV1+Emh01fHnq2Gdgrw==}
     dev: false
+
+  /ts-toolbelt/6.15.5:
+    resolution: {integrity: sha512-FZIXf1ksVyLcfr7M317jbB67XFJhOO1YqdTcuGaq9q5jLUoTikukZ+98TPjKiP2jC5CgmYdWWYs0s2nLSU0/1A==}
+    dev: true
 
   /tslib/2.4.0:
     resolution: {integrity: sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==}

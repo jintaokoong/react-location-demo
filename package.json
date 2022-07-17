@@ -11,7 +11,9 @@
   "dependencies": {
     "@hookform/resolvers": "^2.9.6",
     "firebase": "^9.9.0",
+    "ky": "^0.31.0",
     "nprogress": "^0.2.0",
+    "ramda": "^0.28.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "7.0.0-beta.14",
@@ -20,6 +22,7 @@
   },
   "devDependencies": {
     "@types/nprogress": "^0.2.0",
+    "@types/ramda": "^0.28.15",
     "@types/react": "^18.0.15",
     "@types/react-dom": "^18.0.6",
     "@vitejs/plugin-react": "^2.0.0",
